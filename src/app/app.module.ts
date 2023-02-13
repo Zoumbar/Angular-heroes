@@ -9,8 +9,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+import { InMemoryDataService } from './services/in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
       dataEncapsulation: false,
     }),
     HttpClientInMemoryWebApiModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     // no need to place any providers due to the `providedIn` flag...
